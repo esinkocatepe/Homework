@@ -1,0 +1,26 @@
+void setup() {
+
+size(400,400);
+
+}
+
+void draw() {
+background(#2ECC71);
+
+fill(#2ECC71);
+stroke(#27AE60);
+
+for(int y = 0 ; y <= height+60; y = y += 60) {
+  for(int x = 0 ; x <= width+60; x = x += 60) {
+   strokeWeight(10);
+   stroke(#27AE60);
+   fill(#2ECC71);
+   ellipse(x+15,y+15,40,40);
+      fill(#27AE60);
+      rect(x+10,y+35,10,20);
+      rect(x+35,y+10,20,10);
+
+
+  }
+}
+}
